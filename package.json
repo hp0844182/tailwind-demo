@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./tailwindcss/style.css -o ./tailwindcss/output.css --watch",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "build": "postcss ./tailwindcss/style.css -o ./tailwindcss/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -14,6 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "*/**/*.{js,ts,tsx}": "eslint --fix"
+  },
   "bugs": {
     "url": "https://github.com/hp0844182/tailwind-demo/issues"
   },
