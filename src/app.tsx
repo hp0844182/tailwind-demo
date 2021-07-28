@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { hot } from 'react-hot-loader/root'
 export interface AppProps {
-  a: number
+  [p: string]: any
 }
 
 export const App: React.FunctionComponent<AppProps> = (props) => {
-  1
-  return <div>123</div>
+  const [count, setCount] = useState(0)
+
+  return (
+    <div
+      onClick={() => {
+        setCount(count + 1)
+      }}
+    >
+      haha:{count}
+    </div>
+  )
 }
+const WapperApp = process.env.NODE_ENV === 'development' ? hot(App) : App
+export default WapperApp

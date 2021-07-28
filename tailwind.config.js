@@ -1,5 +1,6 @@
+/** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
-  mode:'jit',
+  mode: 'jit',
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
