@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader/root'
 import { Link, BrowserRouter as Router, Route } from 'react-router-dom'
 import { routers } from './router'
 import { SideMenu } from './side-menu'
+import './app.scss'
 export interface AppProps {
   [p: string]: any
 }
@@ -13,7 +14,7 @@ export const App: React.FunctionComponent<AppProps> = (props) => {
     <Router>
       <div className="flex">
         <SideMenu />
-        <div className="flex-1 h-screen overflow-auto">
+        <div styleName="router-box">
           {routers.map((item) => {
             return <Route path={item.path} key={item.path} component={item.component} />
           })}

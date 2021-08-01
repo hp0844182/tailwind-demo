@@ -4,7 +4,12 @@ module.exports = {
   purge: ['./src/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      transitionDelay: {
+        2000: '2000ms',
+        4000: '4000ms',
+      },
+    },
   },
   variants: {
     extend: {},

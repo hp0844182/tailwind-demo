@@ -4,7 +4,7 @@ export interface FloatLabelProps {
   [p: string]: any
 }
 
-const FloatLabel: React.FunctionComponent<FloatLabelProps> = (props) => {
+export const FloatLabel: React.FunctionComponent<FloatLabelProps> = (props) => {
   12
   return (
     <div className="min-h-screen bg-blue-100 flex justify-center items-center">
@@ -72,5 +72,3 @@ const FloatLabel: React.FunctionComponent<FloatLabelProps> = (props) => {
     </div>
   )
 }
-
-export default FloatLabel

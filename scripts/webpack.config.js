@@ -5,7 +5,7 @@ const path = require('path')
 /**@type {import('webpack').Configuration} */
 const config = {
   mode: process.env.NODE_ENV,
-  entry: path.resolve(__dirname, '../src/index.tsx'),
+  entry: path.resolve(__dirname, process.env.ENTRY),
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
@@ -26,6 +26,21 @@ const config = {
         test: /\.css$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[path][name]__[local]',
+              },
+            },
+          },
+          'sass-loader',
+        ],
       },
     ],
   },

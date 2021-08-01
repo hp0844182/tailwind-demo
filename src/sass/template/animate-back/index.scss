@@ -1,0 +1,29 @@
+.container{
+  background-color: rgba(249, 250, 251, 1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+
+  .wrraper{
+    width: 100%;
+    max-width: 32rem;
+    position: relative;
+  }
+
+  .back-dot{
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+  }
+
+}
+
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}

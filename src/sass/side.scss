@@ -1,0 +1,32 @@
+.box{
+  width: 200px;
+  background-color: rgba(37, 99, 235,1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  & > :not([hidden]) ~ :not([hidden]) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.link{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 0.25rem/* 4px */;
+    &:hover{
+      background-color: rgba(30, 58, 138, 0.2);
+    }
+    text-decoration: none;
+}
+.link.active{
+  a{
+    background-color: #fff;
+    color: rgba(59, 130, 246,1);
+  }
+}
