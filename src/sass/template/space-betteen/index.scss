@@ -1,0 +1,62 @@
+.box{
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(99, 102, 241, 1);
+}
+
+.wapper{
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-tag{
+  margin-bottom: 1.5rem;
+  background-color: rgba(129, 140, 248, 1);
+  height: 1rem;
+  width: 10rem;
+  border-radius: 0.25rem;
+}
+
+.item1{
+  height: 5rem;
+  width: 5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);;
+}
+.itembox1{
+  display: flex;
+  align-items: center;
+  & > :not([hidden]) ~ :not([hidden]){
+    margin-left: 1.5rem;
+  }
+}
+
+.itembox2{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  & > :not([hidden]) ~ :not([hidden]){
+    margin-right: 1.5rem;
+  }
+}
+
+.itembox3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & > :not([hidden]) ~ :not([hidden]){
+    margin-top: 1.5rem;
+  }
+}
+.itembox4{
+  margin: -0.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  & .item1{
+    margin:1.5rem
+  }
+}

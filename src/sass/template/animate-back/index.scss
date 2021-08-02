@@ -46,8 +46,38 @@
     .box{
       padding: 1.25rem;
       background-color: #fff;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 2rem;
+      }
     }
-
+    .box1-left,.box2-left,.box3-left{
+      flex: 1;
+      height: 1rem;
+      background-color: rgba(209, 213, 219,1);
+      border-radius: 0.25rem;
+    }
+    .box1-right{
+      width: 6rem;
+      height: 1.25rem;
+      border-radius: 0.5rem;
+      background-color: rgba(196, 181, 253, 1);
+    }
+    .box2-right{
+      width: 5rem;
+      height: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: rgba(252, 211, 77, 1);
+    }
+    .box3-right{
+      width: 7rem;
+      height: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: rgba(244, 114, 182, 1);
+    }
   }
 }
 

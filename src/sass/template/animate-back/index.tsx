@@ -12,26 +12,17 @@ export const AnimateBack: React.FunctionComponent<AnimateBackProps> = (props) =>
         <div styleName="back-dot dot3"></div>
 
         <div styleName="content-box">
-          <div
-            className="p-5 bg-white rounded-lg flex items-center 
-          justify-between space-x-8"
-          >
-            <div className="flex-1 h-4 bg-gray-300 rounded"></div>
-            <div className="w-24 h-6 rounded-lg bg-purple-300"></div>
+          <div styleName="box">
+            <div styleName="box1-left"></div>
+            <div styleName="box1-right"></div>
           </div>
-          <div
-            className="p-5 bg-white rounded-lg flex items-center 
-          justify-between space-x-6"
-          >
-            <div className="flex-1 h-4 bg-gray-300 rounded"></div>
-            <div className="w-20 h-6 rounded-lg bg-yellow-300"></div>
+          <div styleName="box">
+            <div styleName="box2-left"></div>
+            <div styleName="box2-right"></div>
           </div>
-          <div
-            className="p-5 bg-white rounded-lg flex items-center 
-          justify-between space-x-10"
-          >
-            <div className="flex-1 h-4 bg-gray-300 rounded"></div>
-            <div className="w-28 h-6 rounded-lg bg-pink-400"></div>
+          <div styleName="box">
+            <div styleName="box3-left"></div>
+            <div styleName="box3-right"></div>
           </div>
         </div>
       </div>
