@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   padding: 4rem;
-
   .wrraper{
+    height: 100%;
     width: 100%;
     max-width: 32rem;
     position: relative;
@@ -17,8 +17,38 @@
     position: absolute;
     height: 18rem;
     width: 18rem;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+  }
+  .dot1{
+    top:0;
+    left:-1rem;
+    background-color: rgba(196, 181, 253, 1);
+  }
+  .dot2{
+    top:0;
+    right: -1rem;
+    background-color: rgba(252, 211, 77, 1);
+  }
+  .dot3{
+    bottom: -2rem;
+    left: 8rem;
+    background-color: rgba(249, 168, 212,1);
   }
 
+  .content-box{
+    margin-top: 2rem;
+    position: relative;
+    & > :not([hidden]) ~ :not([hidden]){
+      margin-top: 1rem;
+    }
+    .box{
+      padding: 1.25rem;
+      background-color: #fff;
+    }
+
+  }
 }
 
 

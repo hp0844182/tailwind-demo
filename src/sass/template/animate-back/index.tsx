@@ -7,20 +7,11 @@ export const AnimateBack: React.FunctionComponent<AnimateBackProps> = (props) =>
   return (
     <div styleName="container">
       <div styleName="wrraper">
-        <div
-          styleName="back-dot"
-          className=" absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full  mix-blend-multiply  blur-xl"
-        ></div>
-        <div
-          styleName="back-dot"
-          className=" top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full  mix-blend-multiply  blur-xl"
-        ></div>
-        <div
-          styleName="back-dot"
-          className=" -bottom-8 left-32 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply  blur-xl"
-        ></div>
+        <div styleName="back-dot dot1"></div>
+        <div styleName="back-dot dot2"></div>
+        <div styleName="back-dot dot3"></div>
 
-        <div className="m-8 relative space-y-4 ">
+        <div styleName="content-box">
           <div
             className="p-5 bg-white rounded-lg flex items-center 
           justify-between space-x-8"

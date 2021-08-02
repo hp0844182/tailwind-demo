@@ -12,7 +12,7 @@ export const App: React.FunctionComponent<AppProps> = (props) => {
   // const location = useLocation()
   return (
     <Router>
-      <div className="flex">
+      <div styleName="box">
         <SideMenu />
         <div styleName="router-box">
           {routers.map((item) => {
