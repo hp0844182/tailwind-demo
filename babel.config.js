@@ -18,5 +18,6 @@ const plugins = [
       },
     },
   ],
+  'babel-plugin-preval',
 ]
 module.exports = { presets, plugins }

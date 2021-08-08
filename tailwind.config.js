@@ -1,8 +1,11 @@
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.tsx'],
-  darkMode: false, // or 'media' or 'class'
+  purge: [
+    // './src/**/*.tsx',
+    './src/test.tsx',
+  ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       transitionDelay: {
